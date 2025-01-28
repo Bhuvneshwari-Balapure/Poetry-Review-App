@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header.css */
+
+.header-navbar {
+  background: linear-gradient(#efe9e9, #0d0146);
+}
+.header-logo {
+  font-size: 2rem !important;
+  font-weight: bold;
+  font-style: italic;
+  color: #d5dc14 !important;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.header-logo:hover {
+  color: rgb(10, 237, 78) !important;
+  text-decoration: none;
+}
+
+.header-register-link {
+  font-size: 1.5rem !important;
+  color: #28f60d !important;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 28px !important;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-register-link:hover {
+  color: #1c4703 !important;
+  background-color: #29eec7;
+  text-decoration: none;
+}
+/* Footer.css */
+
+.footer-section {
+  background: linear-gradient(#0d0146, #efe9e9);
+  color: #fff;
+
+  border-top: 2px solid #d5dc14;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d5dc14;
+  margin-bottom: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-icon-link {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon-link:hover {
+  color: #29eec7;
+  transform: scale(1.2);
+}
+
+.footer-credits {
+  font-size: 1rem;
+  color: #0a5001;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* VisitorHome.css */
+
+.visitor-home {
+  height: 100vh;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/030/435/340/small/beautiful-flower-on-note-paper-serene-poetry-concept-flat-lay-ai-generative-photo.jpg")
+    no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.poetry-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+/* PoetRegistration.css */
+.poet-registration {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/046/736/853/small_2x/softly-blurred-strands-of-light-an-aged-parchment-paper-with-a-faint-silhouette-of-a-classic-red-rose-hinting-at-a-timeless-love-story-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  min-height: 100vh;
+}
+
+.registration-form {
+  background-color: rgba(129, 132, 54, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.text-white {
+  color: white;
+}
+
+button {
+  background-color: #6f42c1;
+  border: none;
+}
+
+button:hover {
+  background-color: #5a32a3;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+}
+#btn {
+  background-color: rgba(167, 3, 3, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  width: 35%;
+  align-items: center;
+  margin: 20px 0px;
+}
+#btn:hover {
+  background-color: rgba(246, 61, 5, 0.6);
+}
+#logRegis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.regisLogin {
+  color: purple;
+  text-decoration: none;
+  font-size: 25px;
+  font: bold;
+}
+.regisLogin:hover {
+  color: rgb(13, 94, 223);
+}
+
+/* -------create poetry---------- */
+
+.create-poetry {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  min-height: 100vh;
+}
+
+.poetry-form {
+  background-color: rgba(54, 54, 55, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.text-white {
+  color: white;
+}
+
+button {
+  background-color: #6f42c1;
+  border: none;
+}
+
+button:hover {
+  background-color: #5a32a3;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+}
+
+#btn {
+  background-color: rgba(167, 3, 3, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  width: 35%;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+#btn:hover {
+  background-color: rgba(246, 61, 5, 0.6);
+}
+
+.poetry-textarea {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  resize: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("https://img.freepik.com/premium-photo/writing-heartfelt-poem-letter-background_1022026-42337.jpg");
+  background-size: cover;
+  background-position: center;
+
+  font-family: "Georgia", serif;
+  padding: 30px !important;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  resize: none;
+  font-style: italic;
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.poetry-textarea::placeholder {
+  color: white !important;
+  font-style: italic;
+  font-size: 25px;
+}
+#input {
+  background: transparent;
+  color: white;
+}
+#input::placeholder {
+  color: white;
+}
+
+/* -------poetry header--------- */
+/* Header.css */
+
+.header-navbar {
+  background: linear-gradient(#efe9e9, #0d0146);
+}
+.header-logo {
+  font-size: 2rem !important;
+  font-weight: bold;
+  font-style: italic;
+  color: #d5dc14 !important;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.header-logo:hover {
+  color: rgb(10, 237, 78) !important;
+  text-decoration: none;
+}
+
+.header-register-link {
+  font-size: 1.5rem !important;
+  color: #28f60d !important;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 28px !important;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-register-link:hover {
+  color: #1c4703 !important;
+  background-color: #29eec7;
+  text-decoration: none;
+}
+
+/* ------------display poetry --------------- */
+.cardBack {
+  height: 100% !important;
+  width: 100% !important;
+
+  background: transparent !important;
+  background-color: rgba(1, 1, 33, 0.6) !important;
+  padding: 5px !important;
+  border-radius: 20% !important;
+  box-shadow: 0 4px 10px rgba(1, 0, 14, 0.79) !important;
+}
+.cardTitle {
+  cursor: pointer;
+}
+.poetry-details {
+  width: 100% !important;
+  background: transparent !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  padding: 30px !important;
+  border-radius: 20% !important;
+  box-shadow: 0 4px 10px rgba(1, 0, 14, 0.79) !important;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-style: italic;
+}
+.poetry-details p {
+  text-align: center;
+  font-size: 22px;
+}
+.poetry-details h2 {
+  color: goldenrod;
+  font-size: 24px !important;
+}
+.poetry-details h4 textarea {
+  box-shadow: 0 4px 10px rgba(1, 0, 14, 0.79);
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+}
+.poetry-details h4 textarea::placeholder {
+  color: rgb(95, 244, 95);
+  font-size: 15px;
+  padding: 5px;
+}
+/* ----visitor card------ */
+.visitor-home {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  /* color: rgb(119, 233, 119); */
+}
+
+.poetry-list {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.custom-card {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.custom-card .cardTitle {
+  padding: 10px;
+}
+
+/* -----------Review poetry----------- */
+.ReviewCards {
+  /* backdrop-filter: blur(5px) !important; */
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+.Reviews {
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+}
+@media (max-width: 768px) {
+  .header-logo {
+    font-size: 1.5rem;
+  }
+
+  .header-register-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .footer-heading {
+    font-size: 1.5rem;
+  }
+
+  .footer-icon-link {
+    font-size: 1.2rem;
+  }
+
+  .footer-credits {
+    font-size: 0.9rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .poetry-form {
+    padding: 20px;
+  }
+
+  #btn {
+    width: 50%;
+  }
+  .visitor-home {
+    padding: 60px 15px;
+  }
+
+  .poetry-list {
+    max-width: 100%;
+  }
+
+  .review {
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
