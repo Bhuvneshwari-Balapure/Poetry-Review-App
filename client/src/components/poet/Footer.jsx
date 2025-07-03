@@ -43,7 +43,7 @@ const Footer = () => {
                 <FaEnvelope />
               </a>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/8827709028"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-icon-link"
