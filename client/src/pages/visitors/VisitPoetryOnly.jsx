@@ -14,7 +14,7 @@ function VisitPoetryOnly() {
   // Fetch poetry details
   const fetchDetail = async () => {
     try {
-      const api = `http://localhost:8080/poetry/GetPoetryForEdit/${id}`;
+      const api = `${import.meta.env.VITE_API}/poetry/GetPoetryForEdit/${id}`;
       const response = await axios.get(api);
       setpoetryName(response.data.poetryName);
       setpoetryContent(response.data.poetryContent);
@@ -27,7 +27,7 @@ function VisitPoetryOnly() {
 
   const submitReview = async () => {
     try {
-      const api = `http://localhost:8080/poetry/addReview/${id}`;
+      const api = `${import.meta.env.VITE_API}/poetry/addReview/${id}`;
       const response = await axios.post(api, {
         comment: review,
       });

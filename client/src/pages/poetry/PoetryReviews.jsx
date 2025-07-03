@@ -11,7 +11,9 @@ function PoetryReviews() {
   // Fetch all reviews from the server
   const fetchReviews = async () => {
     try {
-      const api = `http://localhost:8080/poetry/GetAllReviews/${poetryId}`;
+      const api = `${
+        import.meta.env.VITE_API
+      }/poetry/GetAllReviews/${poetryId}`;
       const response = await axios.get(api);
       setReviews(response.data.reviews || []);
     } catch (error) {

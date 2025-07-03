@@ -12,7 +12,7 @@ function EditPoetry() {
 
   const fetchDetail = async () => {
     try {
-      let api = `http://localhost:8080/poetry/GetPoetryForEdit/${id}`;
+      let api = `${import.meta.env.VITE_API}/poetry/GetPoetryForEdit/${id}`;
       const response = await axios.get(api);
       console.log(response.data);
 
@@ -28,7 +28,7 @@ function EditPoetry() {
   const updatePoetry = async (e) => {
     e.preventDefault();
     try {
-      let api = `http://localhost:8080/poetry/updatePoetry`;
+      let api = `${import.meta.env.VITE_API}/poetry/updatePoetry`;
       const response = await axios.put(api, {
         id: id,
         poetryName: poetryName,

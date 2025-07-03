@@ -9,7 +9,7 @@ function PoetryOnly() {
   const [poetryContent, setpoetryContent] = useState("");
   const fetchDetail = async () => {
     try {
-      let api = `http://localhost:8080/poetry/GetPoetryForEdit/${id}`;
+      let api = `${import.meta.env.VITE_API}/poetry/GetPoetryForEdit/${id}`;
       const response = await axios.get(api);
       console.log(response.data); // Ensure the data is correct
       setpoetryName(response.data.poetryName);

@@ -16,7 +16,7 @@ function DisplayPoetry() {
   const poetName = localStorage.getItem("PoetName");
   const poetid = localStorage.getItem("Poetid");
   const loadData = async () => {
-    let api = "http://localhost:8080/poetry/DisplayPoetry";
+    let api = `${import.meta.env.VITE_API}/poetry/DisplayPoetry`;
     try {
       const response = await axios.get(api, {
         params: { poetName: poetName, poetid: poetid },
@@ -41,7 +41,7 @@ function DisplayPoetry() {
   };
   const DelPoetry = async (id) => {
     try {
-      let api = `http://localhost:8080/poetry/DelPoetry/${id}`;
+      let api = `${import.meta.env.VITE_API}/poetry/DelPoetry/${id}`;
       let response = await axios.delete(api);
       console.log(response.data);
 

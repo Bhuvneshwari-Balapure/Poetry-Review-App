@@ -12,7 +12,7 @@ const VisitorHome = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const api = "http://localhost:8080/poetry/DisplayAllPoetry";
+        const api = `${import.meta.env.VITE_API}/poetry/DisplayAllPoetry`;
         const response = await axios.get(api);
         setPoetryList(response.data);
       } catch (error) {

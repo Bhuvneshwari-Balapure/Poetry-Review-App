@@ -31,7 +31,7 @@ const CreatePoetry = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let api = "http://localhost:8080/poetry/createPoetry";
+      let api = `${import.meta.env.VITE_API}/poetry/createPoetry`;
       const data = {
         ...input,
         poetid: localStorage.getItem("Poetid"),
@@ -89,12 +89,7 @@ const CreatePoetry = () => {
                 </Form.Group>
 
                 <div className="text-center">
-                  <Button
-                    id="btn"
-                    variant="primary"
-                    type="submit"
-                    onClick={handleSubmit}
-                  >
+                  <Button id="btn" variant="primary" type="submit">
                     Submit
                   </Button>
                 </div>
