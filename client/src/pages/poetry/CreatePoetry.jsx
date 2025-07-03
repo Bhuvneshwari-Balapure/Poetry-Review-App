@@ -53,7 +53,7 @@ const CreatePoetry = () => {
 
   return (
     <div className="create-poetry">
-      <Container>
+      <Container fluid className="px-3">
         <Row className="justify-content-center">
           <Col md={6}>
             <div className="poetry-form">

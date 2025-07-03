@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const VisitorHome = () => {
   const [poetryList, setPoetryList] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const poetryPerPage = 12;
+  const poetryPerPage = 5;
   const navigate = useNavigate();
 
   useEffect(() => {

@@ -24,8 +24,8 @@ const PoetryHeader = () => {
       className="shadow-sm"
     >
       <Container>
-        <Navbar.Brand as={Link} to="/" className="fw-bold">
-          Welcome {poetName} to Poetry App
+        <Navbar.Brand as={Link} to="/" className="poetryTxt fw-bold ">
+          Welcome {poetName}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">

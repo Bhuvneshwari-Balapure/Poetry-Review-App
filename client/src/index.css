@@ -82,10 +82,10 @@
 /* VisitorHome.css */
 
 .visitor-home {
-  height: 100vh;
+  /* height: 100vh; */
   background: url("https://static.vecteezy.com/system/resources/thumbnails/030/435/340/small/beautiful-flower-on-note-paper-serene-poetry-concept-flat-lay-ai-generative-photo.jpg")
     no-repeat center center/cover;
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,12 +271,14 @@ textarea {
 
 /* -------poetry header--------- */
 /* Header.css */
-
+.poetryTxt {
+  font-size: 15px !important;
+}
 .header-navbar {
   background: linear-gradient(#efe9e9, #0d0146);
 }
 .header-logo {
-  font-size: 2rem !important;
+  font-size: 1rem !important;
   font-weight: bold;
   font-style: italic;
   color: #d5dc14 !important;
